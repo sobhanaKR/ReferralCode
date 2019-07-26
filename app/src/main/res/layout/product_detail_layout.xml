@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view"
+        android:textSize="16dp"
+        android:gravity="left"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Alocasia Leaf Drop Earring"/>
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Rs.9650"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/delivery_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/price"
+        android:background="#FAF7F6">
+
+        <TextView
+            android:id="@+id/fast_delivery_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="EMI available from Rs.1000"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xcl_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/delivery_tv"
+        android:background="#FAF7F6">
+
+        <TextView
+            android:id="@+id/xcl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Earn 771 xCLusive Points on placing a prepaid order"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xcl_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="SP01711-YGP900"
+        android:textSize="14dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/t_and_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/sku"
+        android:layout_marginTop="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6EAA8F"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/tc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:text="Term and Conditions"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tc_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/down_arrow"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/point1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="1.Points will be rewarded only after profile Completion of the Referral"
+        android:layout_below="@id/t_and_c"/>
+
+    <TextView
+        android:id="@+id/point2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="2.24 hours alloted to Share and Earn Rewards"
+        android:layout_below="@id/point1"/>
+    <TextView
+        android:id="@+id/point3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="3.Earned points will expire after 48 hours "
+        android:layout_below="@id/point2"/>
+
+    <TextView
+        android:id="@+id/point4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="4.For each referral ₹50 will be reduced(upto 50% of the product price) from the selected product"
+        android:layout_below="@id/point3"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_now"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Buy Now"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_ripples_green"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
